@@ -245,3 +245,14 @@
     stampState: "paper_stamp-deny"
   - type: Sprite
     state: stamp-deny
+
+- type: entity
+  name: detective stamp
+  parent: RubberStampBase
+  id: RubberStampDetective
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-detective
+    stampState: "paper_stamp-detective"
+  - type: Sprite
+    state: stamp-detective
