@@ -17,6 +17,7 @@ using Content.Server.Speech.Components;
 using Content.Server.Temperature.Components;
 using Content.Shared.CombatMode;
 using Content.Shared.CombatMode.Pacification;
+using Content.Shared.Cuffs.Components;
 using Content.Shared.Damage;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
@@ -105,6 +106,7 @@ namespace Content.Server.Zombies
             RemComp<ReproductiveComponent>(target);
             RemComp<ReproductivePartnerComponent>(target);
             RemComp<LegsParalyzedComponent>(target);
+            RemComp<CuffableComponent>(target);
 
             //funny voice
             var accentType = "zombie";
